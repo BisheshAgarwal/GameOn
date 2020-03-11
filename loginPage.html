@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GameOn</title>
+        <link type="text/css" rel="stylesheet" href="vendors/css/grid.css">
+        <link type="text/css" rel="stylesheet" href="vendors/css/normalize.css">
+        <link type="text/css" rel="stylesheet" href="vendors/css/animate.css">
+        <link type="text/css" rel="stylesheet" href="resources/css/loginPageStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <div class="row">
+                    <img src="resources/img/back.jfif" class="logo">
+                    <ul class="main-nav">
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="index.html#features">About</a></li>
+                        <li> <a href="loginPage.html">Login</a></li>
+                        <li> <a href="registerPage.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <h2>Login</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="login-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="E-mail">E-mail</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" placeholder="Enter Email" class="js--email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Password">Password</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="password" placeholder="Enter Password" class="js--password" required>
+                        </div>
+                    </div>
+                    <div class="row login-row">
+                        <div class="col span-1-of-3">
+                            <p class="no-account">Don't have an acccount ? <a href="registerPage.html" class="register">Create my account</a></p>
+                        </div>
+                        
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Login">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p class="copyright">Copyright © 2020 by GameOn. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/bd9ce8f7d9.js"></script>
+        <script src="resources/js/loginValidation.js"></script>
+    </body>
+</html>

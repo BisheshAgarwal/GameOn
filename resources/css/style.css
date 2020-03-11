@@ -1,0 +1,352 @@
+/* RED COLOR: #e74c3c */
+
+/******* BASIC SETUP *******/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+html{
+    font-size: 20px;
+    font-family: 'Open Sans', Arial;
+    color: #575151;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/******* REUSABLE COMPONENTS *******/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 180%;
+}
+
+h2:after{
+    display: block;
+    border-bottom: 2px solid #e74c3c;
+    width: 100px;
+    content: " ";
+    margin: 30px auto;
+}
+
+h3{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 110%;
+}
+
+/******* HEADER *******/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/game-1-forza.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 40px;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+    margin-top: 25px;
+    border-radius: 100px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 100px;
+    transition: 0.2s background-color, 0.2s color;
+    font-weight: 300;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    background-color: #000;
+    color: #e74c3c;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky-nav{
+    position: fixed;
+    width: 100%;
+    background-color: #ebebeb;
+    z-index: 9999;
+    box-shadow: 0 1px 2px #d6d6d6;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    color: #000;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+
+.sticky-nav .main-nav li a:hover,
+.sticky-nav .main-nav li a:active{
+    color: #e74c3c;
+}
+
+.sticky-nav .main-nav{
+    margin-top: 18px;
+}
+
+.sticky-nav .logo{
+    margin-top: 10px;
+    height: 40px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box-2{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.hero-text-box-3{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.price-container{
+    margin-top: 30px;
+}
+
+.discount{
+    color: #fff;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+    padding: 5px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.price{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.discounted-price{
+    color: #d0d0d0;
+    margin-left: 5px;
+}
+
+.more-info:link,
+.more-info:visited{
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 80%;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    transition: 0.2s background-color, 0.2s border;
+}
+
+.more-info:hover,
+.more-info:active{
+    background-color: #217dbb;
+    border: 1px solid #217dbb;
+}
+
+h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.game-description{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 150%;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 90%;
+}
+
+.slide-btn-1, .slide-btn-2, .slide-btn-3{
+    color: #fff;
+    position: absolute;
+    left: 48%;
+    top: 85%;
+}
+
+.slide-btn-2{
+    left: 51%;
+}
+
+.slide-btn-3{
+    left: 54%;
+}
+
+.active{
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+/******* SECTION FEATURES *******/
+
+section{
+    padding: 80px 0;
+}
+
+.section-features{
+    background-color: #ebebeb;
+}
+
+.section-features p{
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.feature-box{
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0px 1px 1px #b5b0b0;
+}
+
+.section-features i{
+    font-size: 220%;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+/******* FOOTER *******/
+
+footer{
+    background-color: #575757;
+    padding: 40px 0px;
+    color: #cecece;
+}
+
+.footer-nav{
+    list-style: none;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 70%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    color: #cecece;
+    transition: 0.2s color;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #000;
+}
+
+.footer-nav-icons{
+    float: right;
+    list-style: none;
+}
+
+.footer-nav-icons li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav-icons li a{
+    text-decoration: none;
+    color: #cecece;
+}
+
+.copyright{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 60%;
+    margin-top: 20px;
+}
+
+.fab{
+    font-size: 110%; 
+}
+
+.facebook:link,
+.facebook:visited{
+    transition: 0.2s color;
+}
+
+.facebook:hover{
+    color: #1877f2;
+}
+
+.twitter:link,
+.twitter:visited{
+    transition: 0.2s color;
+}
+
+.twitter:hover{
+    color: #55acee;
+}
+
+.instagram:link,
+.instagram:visited{
+    transition: 0.2s color;
+}
+
+.instagram:hover{
+    color: #c32aa3;
+}
+
+/******* SECTION GAMES *******/
+
