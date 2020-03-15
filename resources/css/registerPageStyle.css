@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -44,6 +45,7 @@ h2:after{
 /******* HEADER *******/
 
 header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/loginBack.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/loginBack.jpg);
     height: 100vh;
     background-size: cover;
@@ -76,6 +78,7 @@ header{
     text-transform: uppercase;
     padding: 10px 15px;
     border-radius: 100px;
+    -webkit-transition: 0.2s background-color, 0.2s color;
     transition: 0.2s background-color, 0.2s color;
     font-weight: 300;
 }
@@ -168,6 +171,7 @@ footer{
 .footer-nav li a:visited{
     text-decoration: none;
     color: #cecece;
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -204,6 +208,7 @@ footer{
 
 .facebook:link,
 .facebook:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -213,6 +218,7 @@ footer{
 
 .twitter:link,
 .twitter:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -222,6 +228,7 @@ footer{
 
 .instagram:link,
 .instagram:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 

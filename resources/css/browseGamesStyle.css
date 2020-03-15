@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -93,6 +94,7 @@ header{
     text-transform: uppercase;
     padding: 10px 15px;
     border-radius: 100px;
+    -webkit-transition: 0.2s background-color, 0.2s color;
     transition: 0.2s background-color, 0.2s color;
     font-weight: 300;
 }
@@ -125,6 +127,7 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.93);
     z-index: 9999;
+    -webkit-box-shadow: 0 1px 2px #d6d6d6;
     box-shadow: 0 1px 2px #d6d6d6;
 }
 
@@ -194,6 +197,7 @@ header{
     background-color: #fff;
     border-radius: 10px;
     padding: 25px 0px;
+    -webkit-box-shadow: 0 2px 2px #d4d4d4;
     box-shadow: 0 2px 2px #d4d4d4;
 }
 
@@ -231,6 +235,7 @@ header{
     text-decoration: none;
     font-size: 80%;
     letter-spacing: 1px;
+    -webkit-transition: 0.2s background-color, 0.2s border;
     transition: 0.2s background-color, 0.2s border;
 }
 
@@ -280,6 +285,7 @@ footer{
 .footer-nav li a:visited{
     text-decoration: none;
     color: #cecece;
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -316,6 +322,7 @@ footer{
 
 .facebook:link,
 .facebook:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -325,6 +332,7 @@ footer{
 
 .twitter:link,
 .twitter:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -334,6 +342,7 @@ footer{
 
 .instagram:link,
 .instagram:visited{
+    -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
@@ -396,6 +405,7 @@ footer{
     color: #fff;
     font-size: 90%;
     border-radius: 5px;
+    -webkit-transition: 0.2s border, 0.2s background-color;
     transition: 0.2s border, 0.2s background-color;
 }
 
