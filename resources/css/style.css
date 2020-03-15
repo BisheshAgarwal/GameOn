@@ -51,6 +51,9 @@ h3{
     margin-bottom: 20px;
     letter-spacing: 1px;
     font-size: 110%;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
 /******* HEADER *******/
@@ -60,6 +63,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
 .main-nav li{
@@ -74,6 +78,7 @@ header{
 }
 
 .logo{
+    float: left;
     height: 50px;
     width: auto;
     margin-top: 25px;
@@ -97,12 +102,27 @@ header{
     color: #e74c3c;
 }
 
+/* MOBILE NAVIGATION */
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+
+.mobile-nav-icon i{
+    font-size: 150%;
+    color: #fff;
+}
+
 /* STICKY NAVIGATION */
 
 .sticky-nav{
     position: fixed;
     width: 100%;
-    background-color: #ebebeb;
+    background-color: rgba(235, 235, 235, 0.93);
     z-index: 9999;
     box-shadow: 0 1px 2px #d6d6d6;
 }
@@ -243,18 +263,18 @@ section{
 }
 
 .section-features{
-    background-color: #ebebeb;
+/*    background-color: #ebebeb;*/
 }
 
 .section-features p{
-    line-height: 145%;
+    line-height: 2;
     font-size: 90%;
 }
 
 .feature-box{
-    background-color: #fff;
+/*    background-color: #fff;*/
     padding: 20px 30px;
-    box-shadow: 0px 1px 1px #b5b0b0;
+/*    box-shadow: 0px 1px 1px #b5b0b0;*/
 }
 
 .section-features i{

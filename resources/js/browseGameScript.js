@@ -54,4 +54,28 @@ $(document).ready(function(){
         $(".sports").css("display", "none");
         $(".multiplayer").css("display", "none");
     });
+    
+    /*-----------------------------------------*/
+    /* MOBILE-NAVIGATIONL */
+    /*-----------------------------------------*/
+    
+    $('.js--mobile-nav').click(function(){
+        var nav= $('.js--main-nav');
+        nav.slideToggle(200);
+    });
+    
+    /*-----------------------------------------*/
+    /* FOR STICKY NAVIGATION */
+    /*-----------------------------------------*/
+    
+    $('.section-games-list').waypoint(function(direction){
+        if(direction== "down"){
+            $('nav').addClass('sticky-nav');
+        }
+        else{
+            $('nav').removeClass('sticky-nav');
+        }
+    }, {
+        offset: '55px'
+    });
 });

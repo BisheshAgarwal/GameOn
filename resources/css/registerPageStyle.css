@@ -66,6 +66,7 @@ header{
     width: auto;
     margin-top: 25px;
     border-radius: 100px;
+    float: left;
 }
 
 .main-nav li a:link,
@@ -83,6 +84,21 @@ header{
 .main-nav li a:active{
     background-color: #000;
     color: #e74c3c;
+}
+
+/* MOBILE NAVIGATION */
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+
+.mobile-nav-icon i{
+    font-size: 150%;
+    color: #fff;
 }
 
 /*** REGISTER FORM ***/

@@ -6,6 +6,7 @@
         <link type="text/css" rel="stylesheet" href="vendors/css/normalize.css">
         <link type="text/css" rel="stylesheet" href="vendors/css/animate.css">
         <link type="text/css" rel="stylesheet" href="resources/css/browseGamesStyle.css">
+        <link type="text/css" rel="stylesheet" href="resources/css/browseGamesQueries.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&display=swap" rel="stylesheet"> 
     </head>
     <body>
@@ -13,12 +14,13 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/back.jfif" class="logo">
-                    <ul class="main-nav">
+                    <ul class="main-nav js--main-nav">
                         <li> <a href="index.html">Home</a></li>
                         <li> <a href="index.html#features">About</a></li>
                         <li> <a href="loginPage.html">Login</a></li>
                         <li> <a href="registerPage.html">Register</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--mobile-nav"><i class="fas fa-bars"></i></a>
                 </div>
             </nav>
         </header>
@@ -38,7 +40,7 @@
                 <div class="row">
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/ac.jpeg" class="game-img">
-                        <h3>Assassins Creed Odyssey</h3>
+                        <h3>AC Odyssey</h3>
                         <div class="price-container">
                             <span class="discount">-60%</span>
                             <span class="price">₹4,970.99</span>
@@ -88,7 +90,7 @@
                     </div>
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/onePiece.jpg" class="game-img">
-                        <h3>One Piece: Pirate Warriors 4</h3>
+                        <h3>Pirate Warriors 4</h3>
                         <div class="price-container">
                             <span class="discount">-19%</span>
                             <span class="price">₹3,976.59</span>
@@ -114,7 +116,7 @@
                 <div class="row">
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/rdr2.jpg" class="game-img">
-                        <h3>Red Dead Redemption 2</h3>
+                        <h3>RDR 2</h3>
                         <div class="price-container">
                             <span class="discount">-43%</span>
                             <span class="price">₹5,965.39</span>
@@ -126,7 +128,7 @@
                     </div>
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/sekiro.jpg" class="game-img">
-                        <h3>Sekiro: Shadows Die Twice</h3>
+                        <h3>Shadows Die Twice</h3>
                         <div class="price-container">
                             <span class="discount">-26%</span>
                             <span class="price">₹4,970.99</span>
@@ -192,7 +194,7 @@
                 <div class="row">
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/nba.jpg" class="game-img">
-                        <h3>NBA 2K20 Legend Edition</h3>
+                        <h3>NBA 2K20</h3>
                         <div class="price-container">
                             <span class="discount">-63%</span>
                             <span class="price">₹6,959.79</span>
@@ -242,7 +244,7 @@
                     </div>
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/monster.jpg" class="game-img">
-                        <h3>Monster Energy Supercross</h3>
+                        <h3>Supercross 3</h3>
                         <div class="price-container">
                             <span class="discount">-55%</span>
                             <span class="price">₹3,976.59</span>
@@ -308,7 +310,7 @@
                 <div class="row">
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/age.jpg" class="game-img">
-                        <h3>Age of Wonders Planetfall</h3>
+                        <h3>AoW Planetfall</h3>
                         <div class="price-container">
                             <span class="discount">-41%</span>
                             <span class="price">₹5,070.39</span>
@@ -332,7 +334,7 @@
                     </div>
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/ww2.png" class="game-img">
-                        <h3>Call of Duty (COD) WWII</h3>
+                        <h3>Call of Duty WWII</h3>
                         <div class="price-container">
                             <span class="discount">-55%</span>
                             <span class="price">₹5,055.39</span>
@@ -386,7 +388,7 @@
                 <div class="row">
                     <div class="col span-1-of-3 box">
                         <img src="resources/img/google.png" class="game-img">
-                        <h3>Google Play Gift Card ₹500</h3>
+                        <h3>₹500 Gift Card</h3>
                         <div class="price-container">
                             <span class="discount">-2%</span>
                             <span class="price">₹510</span>
@@ -527,6 +529,7 @@
         </footer>
         <script src="https://kit.fontawesome.com/bd9ce8f7d9.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/browseGameScript.js"></script>
         <script src="resources/js/cartScript.js"></script>
     </body>

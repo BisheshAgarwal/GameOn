@@ -1,0 +1,71 @@
+/* Big Tablet to 1200px (width smaller than the 1140px row) */
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    
+    body{ font-size: 19px; }
+    .row{ padding: 0 2%; }
+    
+}
+
+/* Small tablet to big tablet: from 768px to 1023 px */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    
+    body{ font-size: 18px; }
+    .row{ padding: 0 2%; }
+    .login-form{ width: 60%; }
+}
+
+/* Small phones to small tablets: from 480px to 767 px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    
+    body{ font-size: 16px; }
+    
+    .main-nav{ display: none; }
+    
+    .row{ padding: 0 2%; }
+    
+    .mobile-nav-icon{ display: inline-block; }
+    .main-nav{
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li{ display: block; }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        font-size: 100%;
+    }
+    
+    .login-form{ width: 80%; }
+    
+}
+
+/* Small phones: from 0px to 479px */
+
+@media only screen and (min-width: 0px) and (max-width: 479px){
+    
+    body{ font-size: 15px; }
+    
+    .main-nav{ display: none; }
+    
+    .row{ padding: 0 4%; }
+    
+    .login-form{ width: 80%; }
+    
+    .mobile-nav-icon{ display: inline-block; }
+    .main-nav{
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li{ display: block; }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        font-size: 100%;
+    }
+    
+}

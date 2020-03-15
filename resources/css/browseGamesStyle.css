@@ -83,6 +83,7 @@ header{
     width: auto;
     margin-top: 10px;
     border-radius: 100px;
+    float: left;
 }
 
 .main-nav li a:link,
@@ -101,6 +102,48 @@ header{
     background-color: #000;
     color: #e74c3c;
 }
+
+/* MOBILE NAVIGATION */
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+
+.mobile-nav-icon i{
+    font-size: 150%;
+    color: #000;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky-nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 9999;
+    box-shadow: 0 1px 2px #d6d6d6;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    color: #000;
+    font-weight: 300;
+    padding: 5px 10px;
+}
+
+.sticky-nav .main-nav li a:hover,
+.sticky-nav .main-nav li a:active{
+    color: #e74c3c;
+}
+
+.sticky-nav .main-nav{
+    margin-top: 18px;
+}
+
 
 /******* SECTION BROWSE GAMES *******/
 
