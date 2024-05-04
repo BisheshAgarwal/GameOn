@@ -1,0 +1,149 @@
+/* SECTION */
+
+.UserListSection {
+    padding: 5rem 0;
+    min-height: calc(100vh - 81px);
+}
+
+/* CONTAINER */
+
+.Container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HEADING */
+
+.PrimaryHeading {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/* TABLE */
+
+.Table {
+    width: 100%;
+    border: 1px solid #eee;
+    margin-top: 2rem;
+}
+
+tbody tr {
+    transition: all .2s;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.Table th {
+    border: 1px solid #eee;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #777;
+    padding: 1.5rem 2rem;
+}
+
+td {
+    border: 1px solid #eee;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #777;
+    padding: 1rem 2rem;
+}
+
+tbody tr:hover {
+    background-color: #eee;
+}
+
+/* EMAIL */
+
+.Email {
+    color: #777;
+    transition: all .2s;
+}
+
+.Email:hover {
+    color: #000;
+}
+
+/* EDIT */
+
+.Edit {
+    color: #000;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    display: inline-block;
+    transition: all .2s;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.Edit:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* DELETE */
+
+.Delete {
+    border: none;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-size: 1rem;
+    transition: all .2s;
+}
+
+.Delete:hover {
+    background-color: #c0392b;
+}
+
+/* BUTTON */
+
+.Button {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:hover {
+    background-color: #000;
+}
+
+.Details {
+    display: block;
+    color: #000;
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: all .2s;
+}
+
+.Details:hover {
+    background-color: #eee;
+    color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 50em) {
+    .Users {
+        overflow-x: scroll;
+    }
+}

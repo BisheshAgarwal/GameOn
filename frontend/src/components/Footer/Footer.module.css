@@ -1,0 +1,16 @@
+.Footer {
+    background-color: #111111;
+}
+
+.Container {
+    font-size: 1.2rem;
+    max-width: 130rem;
+    padding: 3rem 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Copyright {
+    margin-top: 1rem;
+    color: #fff;
+}

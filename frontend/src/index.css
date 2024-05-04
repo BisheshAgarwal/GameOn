@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap');
+
+::selection {
+  color: #fff;
+  background-color:var(--color-primary);
+}
+
+:root {
+  --color-primary: #ffc311;
+  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Titillium Web', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 61.875em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+    html {
+      font-size: 50%;
+    }
+    
+}

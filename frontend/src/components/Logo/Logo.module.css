@@ -1,0 +1,16 @@
+.Logo {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.Logo span {
+    color: var(--color-primary);
+}
+
+.LogoLink,
+.LogoLink:hover {
+    text-decoration: none;
+}

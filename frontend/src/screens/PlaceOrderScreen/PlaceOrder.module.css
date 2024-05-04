@@ -1,0 +1,162 @@
+/* SECTION */
+
+.PlaceOrderSection {
+    padding: 3rem 0;
+    min-height: calc(100vh - 81px);
+}
+
+/* CONTAINER */
+
+.Container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+}
+
+/* Checkout Steps Container */
+
+.CheckoutStepsContainer {
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+/* ORDER SUMMARY */
+/* HEADING */
+
+.Heading {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.Heading span {
+    color: var(--color-primary);
+}
+
+/* ADDRESS */
+
+.Address {
+    font-size: 1.5rem;
+}
+
+.Address span {
+    font-weight: 700;
+}
+
+/* SUB-CONTAINERS */
+
+.SubContainer:not(:last-child) {
+    border-bottom: 2px solid #eee;
+}
+
+.SubContainer:not(:first-child) {
+    padding-top: 2rem;
+}
+
+/* ORDER ITEMS */
+
+.OrderItem {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr;
+    grid-gap: 2rem;
+
+    border-bottom: 2px solid #eee;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.OrderItem:not(:first-child) {
+    padding-top: 1rem;
+}
+
+.OrderItemImg img {
+    width: 100%;
+}
+
+.Link {
+    font-size: 1.5rem;
+    color: rgb(119, 119, 119);
+    transition: all .2s;
+}
+
+.Link:hover {
+    color: #000;
+}
+
+.OrderItemPrice {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* PLACE ORDER */
+
+.PlaceOrder {
+    border: 1px solid #ccc;
+    align-self: start;
+}
+
+.PlaceOrder h2 {
+    padding: 2rem;
+    border-bottom: 2px solid #eee;
+    margin: 0;
+}
+
+.OrderDetail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: rgb(102, 101, 101);
+}
+
+.OrderDetail:not(:last-child) {
+    border-bottom: 2px solid #eee;
+}
+
+/* BUTTON */
+
+.PlaceOrderButton {
+    grid-column: 1 / -1;
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.PlaceOrderButton:focus {
+    outline: none;
+}
+
+.PlaceOrderButton:hover {
+    background-color: #000;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 37.5em) {
+    .Container {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    .Heading {
+        font-size: 2.4rem;
+    }
+}

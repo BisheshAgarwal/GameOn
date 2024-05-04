@@ -1,0 +1,173 @@
+/* CART SECTION */
+
+.CartSection {
+    padding: 7rem 0;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* HEADING */
+
+.Heading {
+    text-align: center;
+    color: #000;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 5.5rem;
+    font-weight: 900;
+}
+
+/* CART CONTAINER */
+
+.CartHeading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+}
+
+.Cart {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #777;
+}
+
+.Cart,
+.CartHeading {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.Cart>*,
+.CartHeading>* {
+    text-align: center;
+}
+
+.Cart:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+}
+
+.Cart:not(:first-child) {
+    margin-top: 2rem;
+}
+
+/* TOTAL CONTAINER */
+
+.Total {
+    text-align: center;
+}
+
+/* IMAGE */
+
+.Img img {
+    width: 100%;
+}
+
+/* PRODUCT LINK */
+
+.Link {
+    text-decoration: none;
+    color: #777;
+}
+
+.Link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* DELETE ICON */
+
+.Delete {
+    border: none;
+    background-color: transparent;
+    transition: all .2s;
+}
+
+.Delete:hover {
+    transform: scale(1.2);
+}
+
+.Delete:focus {
+    outline: none;
+}
+
+/* SELECT */
+
+.Select {
+    border: 1px solid var(--color-primary);
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+
+/* TOTAL */
+
+.Total {
+    align-self: start;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
+    padding: 2rem 1rem;
+}
+
+.Total h2 {
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.Total h2 span {
+    color: var(--color-primary);
+}
+
+.Total p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* BUTTON */
+
+.Button {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:hover {
+    background-color: #000;
+}
+
+.Button:disabled {
+    background-color: #777;
+    color: #fff;
+    font-family: inherit;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 37.5em) {
+    .Container {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}

@@ -1,0 +1,81 @@
+/* SECTION */
+
+.ShippingSection {
+    padding: 5rem 0;
+    min-height: calc(100vh - 81px);
+}
+
+/* CONTAINER */
+
+.Container {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* FORM HEADING */
+
+.FormHeading {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+/* LABEL */
+
+.Label {
+    font-size: 1.4rem;
+    color: #777;
+}
+
+/* INPUT */
+
+.Input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 0.1538rem solid #eeeeee;
+    color: #777777;
+    background-color: #f7f7f9;
+}
+
+.Input:focus,
+.Input:hover {
+    outline: none;
+}
+
+/* BUTTON */
+
+.Button {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:hover {
+    background-color:#000;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 31.25em) {
+    .Button {
+        align-self: flex-start;
+        width: 100%;
+    }
+}

@@ -1,0 +1,142 @@
+/* PRODUCT DETAILS SECTION */
+
+.ProductDetailsSection {
+    padding: 7rem 0;
+}
+
+/* CONTAINER */
+
+.Container {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 3rem;
+    align-items: start;
+
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* IMAGE CONTAINER */
+
+.ImgContainer {
+    width: 100%;
+}
+
+/* ABOUT CONTAINER */
+
+.GameAboutContainer {
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .15);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.GameAboutContainer h2 {
+    color: #000;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.GameAboutContainer span {
+    color: var(--color-primary);
+}
+
+.GameAboutContainer p {
+    color: #777;
+    font-size: 1.6rem;
+}
+
+/* GAME DETAILS CONTAINER */
+
+.GameDetailsContainer {
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .15);
+    padding: 3rem;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-row-gap: 1rem;
+    align-items: center;
+}
+
+.Detail {
+    text-align: center;
+}
+
+.Detail .Key {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.Detail .Value {
+    font-size: 1.6rem;
+    color: #777;
+}
+
+/* BUTTON */
+
+.CartButton {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.CartButton:focus {
+    outline: none;
+}
+
+.CartButton:hover {
+    background-color: #000;
+}
+
+.CartButton:disabled {
+    background-color: #777;
+    color: #fff;
+    font-family: inherit;
+}
+
+/* QUANTITY SELECT */
+
+.Select {
+    border: 1px solid var(--color-primary);
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 56.25em) {
+    .Container {
+        grid-template-columns: 1fr;
+        max-width: 130rem;
+    }
+
+    .ImgContainer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    .ImgContainer {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .ImgContainer img {
+        width: 100%;
+    }
+}

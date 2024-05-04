@@ -1,0 +1,118 @@
+/* CAROUSEL */
+
+.CarouselContainer {
+    background-color: black;
+    position: relative;
+}
+
+/* SHOP SECTION */
+
+.ShopSection {
+    padding: 7rem 2rem;
+}
+
+.ShopHeading {
+    color: #000;
+    text-align: center;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    font-weight: 900;
+}
+
+.ShopHeading span {
+    color: var(--color-primary);
+}
+
+.Container {
+    max-width: 130rem;
+    margin: 0 auto;
+    color: #000;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+/* ABOUT SECTION */
+
+.AboutSection {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.AboutContainer {
+    color: #fff;
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+}
+
+/* ABOUT IMAGE */
+
+.AboutImage {
+    width: 50rem;
+    display: block;
+}
+
+/* ABOUT TEXT */
+
+.AboutTextContainer {
+    padding: 0;
+}
+
+.AboutTextContainer h2 {
+    font-size: 6rem;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 40rem;
+    line-height: 1;
+    margin: 2rem 0;
+}
+
+.AboutContainer h2 span {
+    color: var(--color-primary);
+}
+
+.AboutTextContainer p {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 61.875em) {
+    .AboutImage {
+        display: none;
+    }
+
+    .AboutTextContainer h2 {
+        font-size: 6rem;
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .AboutTextContainer h2 {
+        font-size: 5.5rem;
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .AboutTextContainer p {
+        font-size: 1.7rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    .Container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+}

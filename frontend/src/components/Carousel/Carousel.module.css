@@ -1,0 +1,51 @@
+.CarouselImg {
+    height: calc(100vh - 75px);
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: .5;
+}
+
+/* CONTAINER */
+
+.CarouselCaption {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.CarouselHeading {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* TEXT */
+
+.CarouselText {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    margin-bottom: 4.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 61.875em) {
+    /* HEADING */
+
+    .CarouselHeading {
+        font-size: 7rem;
+    }
+
+    /* TEXT */
+
+    .CarouselText {
+        font-size: 1.8rem;
+    }
+}

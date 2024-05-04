@@ -1,0 +1,95 @@
+
+.GameContainer:hover .ImgContainer::before {
+    opacity: .5;
+    visibility: visible;
+    height: 100%;
+}
+
+.GameContainer:hover .ImgContainer .ImgCaption {
+    opacity: 1;
+    visibility: visible;
+    left: 50%;
+}
+
+/* GAME IMAGE CONTAINER */
+
+.ImgContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.GameImg {
+    width: 100%;
+    display: block;
+}
+
+.ImgCaption {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 200;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ImgContainer::before {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: var(--color-primary);
+    opacity: .5;
+    z-index: 100;
+    transition: all .5s ease-in-out;
+
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+/* GAME TITLE AND PRICE */
+
+.GameTitle, .ImgCaption {
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.GameTitle {
+    margin-top: 1.5rem;
+}
+
+.GamePrice {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* ICON */
+.Icon {
+    text-align: center;
+}
+
+.Icon i {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-right: .5rem;
+}
+
+.Icon span {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 50em) {
+    
+}

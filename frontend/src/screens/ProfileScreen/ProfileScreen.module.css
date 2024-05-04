@@ -1,0 +1,142 @@
+/* PROFILE SECTION */
+
+.ProfileSection {
+    padding: 5rem 0;
+    min-height: calc(100vh - 81px);
+}
+
+/* GRID CONTAINER */
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 2.7fr;
+    grid-gap: 5rem;
+
+    max-width: 130rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+/* FORM HEADING */
+
+.FormHeading {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.FormHeading span {
+    color: var(--color-primary);
+}
+
+/* LABEL */
+
+.Label {
+    font-size: 1.4rem;
+    color: #777;
+}
+
+/* INPUT */
+
+.Input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 0.1538rem solid #eeeeee;
+    color: #777777;
+    background-color: #f7f7f9;
+}
+
+.Input:focus,
+.Input:hover {
+    outline: none;
+}
+
+/* BUTTON */
+
+.Button {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:hover {
+    background-color: #000;
+}
+
+/* TABLE */
+
+.Table {
+    width: 100%;
+    border: 1px solid #eee;
+    margin-top: 2rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.Table th {
+    border: 1px solid #eee;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #777;
+    padding: 1.5rem 2rem;
+}
+
+td {
+    border: 1px solid #eee;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #777;
+    padding: 1rem 2rem;
+}
+
+/* ORDER DETAILS BUTTON */
+
+.OrderDetailsButton {
+    font-weight: 300;
+    color: #777;
+    font-size: 1.2rem;
+    transition: all .2s;
+    background-color: #fff;
+    padding: 1rem;
+    display: block;
+    font-weight: 300;
+}
+
+.OrderDetailsButton:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 50em) {
+    .Container {
+        grid-template-columns: 1fr;
+    }
+
+    .Button {
+        width: 100%;
+    }
+
+    .Orders {
+        overflow-x: scroll;
+    }
+}

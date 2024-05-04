@@ -1,0 +1,101 @@
+::placeholder {
+    color: #777;
+}
+
+.LoginSection {
+    min-height: calc(100vh - 92px);
+    display: flex;
+    align-items: center;
+}
+
+.Form {
+    max-width: 50rem;
+    margin: -10rem auto 0 auto;
+    padding: 0 2rem;
+    flex: 1;
+    font-family: var(--font-body);
+}
+
+.Form h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+/* INPUT TYPE */
+
+.Input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 0.1538rem solid #eeeeee;
+    color: #777777;
+    background-color: #f7f7f9;
+}
+
+.Input:focus,
+.Input:hover {
+    outline: none;
+}
+
+/* BUTTON */
+
+.ButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Button {
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.Button:focus {
+    outline: none;
+}
+
+.Button:hover {
+    background-color:#000;
+}
+
+/* REGISTER TEXT */
+
+.Register {
+    text-decoration: none;
+    font-family: inherit;
+    color: #777;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.Register:hover{
+    text-decoration: none;
+    color:#000;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 31.25em) {
+    .ButtonContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Register {
+        align-self: flex-start;
+    }
+}
